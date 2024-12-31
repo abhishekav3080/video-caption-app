@@ -1,25 +1,22 @@
 .caption {
-  position: absolute;
+  position: fixed;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  width: auto;
-  max-width: 80%; /* Limit caption width */
   text-align: center;
-  font-size: 18px; /* Smaller font size */
-  line-height: 1.5; /* Adjust line height for readability */
+  font-size: 16px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 5px 10px;
-  border-radius: 5px; /* Rounded edges for better aesthetics */
-  text-shadow: 1px 1px 2px #000; /* Subtle shadow for readability */
+  text-shadow: 2px 2px 4px #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 5px;
   pointer-events: none;
   z-index: 9999;
+  transition: all 0.3s ease-in-out;
 }
 
-.fullscreen-caption {
-  position: fixed;
-  bottom: 5%; /* Adjust placement for fullscreen */
-  font-size: 20px; /* Slightly larger font in fullscreen */
-  max-width: 70%; /* Adjust width for fullscreen */
+.caption.fullscreen {
+  font-size: 20px;
+  bottom: 5%;
+  max-width: 80%;
 }

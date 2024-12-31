@@ -3,7 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import VideoPlayer from "./components/VideoPlayer";
 
 function App() {
-  const [videoUrl, setVideoUrl] = useState("");
+  const [videoUrl, setVideoUrl] = useState(
+    "https://www.w3schools.com/html/mov_bbb.mp4"
+  ); // Default URL
   const [captions, setCaptions] = useState([]);
   const [startTime, setStartTime] = useState("");
   const [endTime, setEndTime] = useState("");
